@@ -1,0 +1,10 @@
+[error] Not a valid command: flywayMigrate
+flywayMigrate
+./flyway migrate
+flyway migrate
+flywayMigrate
+Migrate
+migrate
+flywayMigrate
+compile
+clean

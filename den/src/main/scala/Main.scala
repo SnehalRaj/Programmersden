@@ -1,72 +1,41 @@
-import scala.slick.driver.PostgresDriver.simple._
+package simple.rest
 
-object Main {
+import akka.actor.ActorSystem
+import akka.http.scaladsl.Http
+import akka.http.scaladsl.model.StatusCodes
+import akka.http.scaladsl.server.Directives._
+import akka.http.scaladsl.server.Route
+import akka.stream.ActorMaterializer
 
-  // this is a class that represents the table I've created in the database
-//   class Users(tag: Tag) extends Table[(Int, String)](tag, "users") {
-//     def id = column[Int]("id")
-//     def username = column[String]("username")
-//     def * = (id, username)
-//   }
-case class User(
-    id : Long,
-    name: String,
-    email: String,
-    points: Int,
-    solved: List[Long],
-    upvoted: List[Long],
-    rights: String
-)
+import scala.io.StdIn
 
-  class Users(tag: Tag) extends Table[User](tag, "Users") {
+object MyApplication {
 
-    def id = column[Long]("ID", O.PrimaryKey)
-
-    def name = column[String]("NAME")
-
-    def email = column[String]("EMAIL", O.Unique)
-
-    def points = column[Int]("POINTS")
-
-    def solved = column[List[Long]]("SOLVED")
-
-    def upvoted = column[List[Long]]("UPVOTED")
-
-    def rights = column[String]("RIGHTS")
-
-    def * =
-      (
-        id,
-        name,
-        email,
-        points,
-        solved,
-        upvoted,
-        rights
-      ) <> ((User.apply _).tupled, User.unapply)
-  }
+  val host = "localhost"
+  val port = 8080
 
   def main(args: Array[String]): Unit = {
 
-    // my database server is located on the localhost
-    // database name is "my-db"
-    // username is "postgres"
-    // and password is "postgres"
-    val connectionUrl = "jdbc:postgresql://localhost/my2db?user=postgres&password=postgres"
+    implicit val system = ActorSystem("simple-rest-system")
+    implicit val materializer = ActorMaterializer()
+    implicit val executionContext = system.dispatcher
 
-    Database.forURL(connectionUrl, driver = "org.postgresql.Driver") withSession {
-      implicit session =>
-        val users = TableQuery[Users]
-
-        // SELECT * FROM users
-        users.list foreach { row =>
-          println("user with id " + row._1 + " has username " + row._2)
+    //Define the route
+    val route : Route = {
+      path("health") {
+        get {
+          complete(StatusCodes.OK,"Everything is great!")
         }
-
-        // SELECT * FROM users WHERE username='john'
-        // users.filter(_.username === "john").list foreach { row => 
-        //    println("user whose username is 'john' has id "+row._1 )
-        }
+      }
     }
+
+    //Startup, and listen for requests
+    val bindingFuture = Http().bindAndHandle(route, host, port)
+    println(s"Waiting for requests at http://$host:$port/...\nHit RETURN to terminate")
+    StdIn.readLine()
+
+    //Shutdown
+    bindingFuture.flatMap(_.unbind())
+    system.terminate()
   }
 }

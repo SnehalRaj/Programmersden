@@ -4,7 +4,7 @@
 		module="den-build"
 		revision="0.1.0-SNAPSHOT"
 		status="integration"
-		publication="20180604135950"
+		publication="20180704115420"
 		e:sbtVersion="1.0" e:scalaVersion="2.12"
 	>
 		<description>
@@ -34,5 +34,7 @@
 		<dependency org="org.scala-lang" name="scala-compiler" rev="2.12.4" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.scala-lang" name="scala-library" rev="2.12.4" conf="scala-tool->default,optional(default);provided->default(compile)"/>
 		<dependency org="org.scala-sbt" name="sbt" rev="1.1.1" conf="provided->default(compile)"/>
+		<dependency org="io.github.davidmweber" name="flyway-sbt" rev="5.0.0-RC2" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
+		<dependency org="com.typesafe.sbt" name="sbt-native-packager" rev="1.3.5" conf="compile->default(compile)" e:sbtVersion="1.0" e:scalaVersion="2.12"/>
 	</dependencies>
 </ivy-module>
