@@ -1,4 +1,4 @@
-scalaVersion := "2.12.4"
+scalaVersion := "2.11.6"
 
 name := "programmers-den"
 organization := "ch.epfl.scala"
@@ -14,10 +14,11 @@ libraryDependencies += "com.typesafe.slick" %% "slick" % "3.2.3"
 
 libraryDependencies += "com.lightbend.akka" %% "akka-stream-alpakka-slick" % "0.19"
 
+libraryDependencies += "com.typesafe.akka" %% "akka-http-spray-json" % "10.1.3"
+
 libraryDependencies ++=Seq (
-    "org.slf4j" %% "slf4j-nop" % "1.2.3",
-    "org.apache.commons" %% "commons-io" % "2.4",
-	"org.flywaydb"		  %% "flyway-core" 		   % "3.0",
+    "commons-io" % "commons-io" % "2.1",
+	"org.flywaydb"		  % "flyway-core" 		   % "3.2.1",
 	"org.scalatest"      %% "scalatest"            % "3.0.5" % "test",
 	"ch.megard" %% "akka-http-cors" % "0.2.1",
 	"com.typesafe.akka"  %% "akka-http"            % "10.0.8",
@@ -27,7 +28,7 @@ libraryDependencies ++=Seq (
 	"com.typesafe.akka"  %% "akka-actor"           % "2.5.3"
      )
  resolvers += "mvnrepository" at "http://mvnrepository.com/artifact/"
- resolvers += "central" at "http://repo1.maven.org/maven2/" 
+ resolvers += "central" at "https://repo1.maven.org/maven2/" 
 enablePlugins(FlywayPlugin)
     
 flywayUrl := "jdbc:hsqldb:file:target/flyway_sample;shutdown=true"

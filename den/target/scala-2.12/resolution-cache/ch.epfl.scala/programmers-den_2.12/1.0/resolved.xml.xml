@@ -4,7 +4,7 @@
 		module="programmers-den_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20180704141801"
+		publication="20180704143313"
 	>
 		<description>
 		programmers-den
@@ -45,7 +45,7 @@
 		<dependency org="com.lightbend.akka" name="akka-stream-alpakka-slick_2.12" rev="0.19" conf="compile->default(compile)"/>
 		<dependency org="org.slf4j" name="slf4j-nop_2.12" rev="1.2.3" conf="compile->default(compile)"/>
 		<dependency org="org.apache.commons" name="commons-io_2.12" rev="2.4" conf="compile->default(compile)"/>
-		<dependency org="org.flywaydb" name="flyway-core_2.12" rev="3.0" conf="compile->default(compile)"/>
+		<dependency org="org.flywaydb" name="flyway-core_2.12" rev="3.2.1" conf="compile->default(compile)"/>
 		<dependency org="org.scalatest" name="scalatest_2.12" rev="3.0.5" conf="test->default(compile)"/>
 		<dependency org="ch.megard" name="akka-http-cors_2.12" rev="0.2.1" conf="compile->default(compile)"/>
 		<dependency org="com.typesafe.akka" name="akka-http_2.12" rev="10.0.8" conf="compile->default(compile)"/>
