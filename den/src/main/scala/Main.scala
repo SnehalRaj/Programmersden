@@ -1,5 +1,6 @@
 package simple.rest
 
+import models._
 import spray.json._
 import akka.http.scaladsl.marshallers.sprayjson.SprayJsonSupport
 import akka.actor.ActorSystem
@@ -27,17 +28,18 @@ case class Health(status: String, description: String){
     "status must be one of: [\"Healthy\",\"Degraded\",\"Critical\", or \"Unknown\"]")
 }
 case object GetHealthRequest
-case class HealthResponse(health: Health)
- case class SetStatusRequest(health: Health)
+case class HealthResponse(user: User)
+ case class SetStatusRequest(user: User)
  
  trait JsonSupport extends SprayJsonSupport with DefaultJsonProtocol{
     implicit val healthFormat = jsonFormat2(Health)
+    implicit val userFormat = jsonFormat7(User)
    }
 
 
 class RequestHandler extends Actor with ActorLogging{
  
-  var status: Health = Health("Healthy","Initialized")
+  var status: User = User(1,"","",2,List.empty,List.empty,"")
  
   def receive: Receive = {
    
@@ -45,8 +47,8 @@ class RequestHandler extends Actor with ActorLogging{
       log.debug("Received GetHealthRequest")
       sender() ! HealthResponse(status)
     case request: SetStatusRequest =>
-      log.debug("Updating Status to {}",request.health)
-      status = request.health
+      log.debug("Updating Status to {}",request.user)
+      status = request.user
       sender() ! HealthResponse(status)
   }
 }
@@ -74,16 +76,16 @@ val route : Route = {
     get {
       onSuccess(requestHandler ? GetHealthRequest) {
         case response: HealthResponse =>
-          complete(StatusCodes.OK,s"Everything is ${response.health.status}!")
+          complete(StatusCodes.OK,s"Everything is ${response.user}!")
         case _ =>
           complete(StatusCodes.InternalServerError)
       }
     } ~
-    post {
-      entity(as[Health]) { statusReport =>
+    post {//EXAMPLE REQUEST: http -v post "localhost:8080/health" id:='1.0' name:='"Snehal"' email:='"snehalraj808@gmail.com"' points:='100' solved:='[1,2,3]' upvoted:='[1,2,3]' rights:='"admin"'
+      entity(as[User]) { statusReport =>
         onSuccess(requestHandler ? SetStatusRequest(statusReport)) {
           case response: HealthResponse =>
-            complete(StatusCodes.OK,s"Posted health as ${response.health.status}!")
+            complete(StatusCodes.OK,s"Posted health as ${response.user}!")
           case _ =>
             complete(StatusCodes.InternalServerError)
         }

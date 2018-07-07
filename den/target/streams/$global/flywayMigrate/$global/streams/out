@@ -1,0 +1,72 @@
+[0m[[0m[0minfo[0m] [0m[0mFlyway Community Edition 5.0.7 by Boxfuse[0m
+[0m[[0m[0minfo[0m] [0m[0mDatabase: jdbc:postgresql://localhost/ (PostgreSQL 9.6)[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for SQL callbacks ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/Resources/db/migration' (Prefix: '', Suffixes: '.sql')[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for resources in path: src/main/Resources/db/migration (src/main/Resources/db/migration)[0m
+[0m[[0m[0mdebug[0m] [0m[0mFound filesystem resource: src/main/Resources/db/migration/V2__Base_Version.sql[0m
+[0m[[0m[0mdebug[0m] [0m[0mFound filesystem resource: src/main/Resources/db/migration/V3__Add_Question_Table.sql[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/resources/db/migration' (Prefix: '', Suffixes: '.sql')[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnable to resolve location filesystem:src/main/resources/db/migration[0m
+[0m[[0m[0mdebug[0m] [0m[0mValidating migrations ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/Resources/db/migration' (Prefix: 'V', Suffixes: '.sql')[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for resources in path: src/main/Resources/db/migration (src/main/Resources/db/migration)[0m
+[0m[[0m[0mdebug[0m] [0m[0mFound filesystem resource: src/main/Resources/db/migration/V2__Base_Version.sql[0m
+[0m[[0m[0mdebug[0m] [0m[0mFound filesystem resource: src/main/Resources/db/migration/V3__Add_Question_Table.sql[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/Resources/db/migration' (Prefix: 'R', Suffixes: '.sql')[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for resources in path: src/main/Resources/db/migration (src/main/Resources/db/migration)[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiltering out resource: src/main/Resources/db/migration/V2__Base_Version.sql (filename: V2__Base_Version.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0mFiltering out resource: src/main/Resources/db/migration/V3__Add_Question_Table.sql (filename: V3__Add_Question_Table.sql)[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/resources/db/migration' (Prefix: 'V', Suffixes: '.sql')[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnable to resolve location filesystem:src/main/resources/db/migration[0m
+[0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/resources/db/migration' (Prefix: 'R', Suffixes: '.sql')[0m
+[0m[[0m[33mwarn[0m] [0m[0mUnable to resolve location filesystem:src/main/resources/db/migration[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully validated 2 migrations (execution time 00:00.013s)[0m
+[0m[[0m[0mdebug[0m] [0m[0mSchema "public" already exists. Skipping schema creation.[0m
+[0m[[0m[0minfo[0m] [0m[0mCurrent version of schema "public": << Empty Schema >>[0m
+[0m[[0m[0mdebug[0m] [0m[0mParsing V2__Base_Version.sql ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mFound statement at line 1: CREATE TABLE "Users"([0m
+[0m[[0m[0mdebug[0m] [0m[0m id BIGINT PRIMARY KEY,[0m
+[0m[[0m[0mdebug[0m] [0m[0m name VARCHAR (50)  NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m password VARCHAR (50) NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m email VARCHAR (355) UNIQUE NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m points SMALLINT NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0msolved BIGINT ARRAY NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0mupvoted BIGINT ARRAY NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m rights VARCHAR (50) NOT NULL[0m
+[0m[[0m[0mdebug[0m] [0m[0m)[0m
+[0m[[0m[0minfo[0m] [0m[0mMigrating schema "public" to version 2 - Base Version[0m
+[0m[[0m[0mdebug[0m] [0m[0mExecuting SQL: CREATE TABLE "Users"([0m
+[0m[[0m[0mdebug[0m] [0m[0m id BIGINT PRIMARY KEY,[0m
+[0m[[0m[0mdebug[0m] [0m[0m name VARCHAR (50)  NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m password VARCHAR (50) NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m email VARCHAR (355) UNIQUE NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m points SMALLINT NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0msolved BIGINT ARRAY NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0mupvoted BIGINT ARRAY NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m rights VARCHAR (50) NOT NULL[0m
+[0m[[0m[0mdebug[0m] [0m[0m)[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdate Count: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mSuccessfully completed migration of schema "public" to version 2 - Base Version[0m
+[0m[[0m[0mdebug[0m] [0m[0mSchema history table "public"."flyway_schema_history" successfully updated to reflect changes[0m
+[0m[[0m[0mdebug[0m] [0m[0mParsing V3__Add_Question_Table.sql ...[0m
+[0m[[0m[0mdebug[0m] [0m[0mFound statement at line 1: CREATE TABLE "Questions"([0m
+[0m[[0m[0mdebug[0m] [0m[0m id BIGINT PRIMARY KEY,[0m
+[0m[[0m[0mdebug[0m] [0m[0m title VARCHAR (50)  NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m content VARCHAR (1000) NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m solution VARCHAR (2000) NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m upvotes INT  NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m correctAnswers INT NOT NULL[0m
+[0m[[0m[0mdebug[0m] [0m[0m)[0m
+[0m[[0m[0minfo[0m] [0m[0mMigrating schema "public" to version 3 - Add Question Table[0m
+[0m[[0m[0mdebug[0m] [0m[0mExecuting SQL: CREATE TABLE "Questions"([0m
+[0m[[0m[0mdebug[0m] [0m[0m id BIGINT PRIMARY KEY,[0m
+[0m[[0m[0mdebug[0m] [0m[0m title VARCHAR (50)  NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m content VARCHAR (1000) NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m solution VARCHAR (2000) NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m upvotes INT  NOT NULL,[0m
+[0m[[0m[0mdebug[0m] [0m[0m correctAnswers INT NOT NULL[0m
+[0m[[0m[0mdebug[0m] [0m[0m)[0m
+[0m[[0m[0mdebug[0m] [0m[0mUpdate Count: 0[0m
+[0m[[0m[0mdebug[0m] [0m[0mSuccessfully completed migration of schema "public" to version 3 - Add Question Table[0m
+[0m[[0m[0mdebug[0m] [0m[0mSchema history table "public"."flyway_schema_history" successfully updated to reflect changes[0m
+[0m[[0m[0minfo[0m] [0m[0mSuccessfully applied 2 migrations to schema "public" (execution time 00:00.295s)[0m

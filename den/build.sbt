@@ -34,13 +34,18 @@ libraryDependencies ++=Seq (
      )
  resolvers += "mvnrepository" at "http://mvnrepository.com/artifact/"
  resolvers += "central" at "https://repo1.maven.org/maven2/" 
+
 enablePlugins(FlywayPlugin)
-    
-flywayUrl := "jdbc:hsqldb:file:target/flyway_sample;shutdown=true"
-flywayUser := "SA"
-flywayLocations += "src/main/Resources/db/migration"
-flywaySchemas := Seq("schema1", "schema2", "schema3")
-flywayPlaceholders := Map(
-    "keyABC" -> "valueXYZ",
-    "otherplaceholder" -> "value123"
-)
+name := "plugtest"
+version := "0.0.1"
+name := "flyway-sbt-test1"
+
+libraryDependencies += "org.hsqldb" % "hsqldb" % "2.2.8"
+
+flywayUrl := "jdbc:postgresql://localhost/"
+flywayUser := "postgres"
+flywayPassword := "postgres"
+flywayLocations += "filesystem:src/main/Resources/db/migration"
+flywayUrl in Test := "jdbc:postgresql://localhost/"
+flywayUser in Test := "postgres"
+flywayPassword := "postgres"
