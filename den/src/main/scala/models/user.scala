@@ -1,46 +1,46 @@
-// package models
+package models
 
-// import slick.jdbc.PostgresProfile.api._
+import pgdriver.MyPostgresProfile.api._
 
-// case class User(
-//     id : Long,
-//     name: String,
-//     email: String,
-//     points: Int,
-//     // solved: List[Long],
-//     // upvoted: List[Long],
-//     rights: String
-// )
+//import slick.driver.PostgresDriver.api._
 
-// trait UserTable {
 
-//   val users = TableQuery[Users]
 
-//   class Users(tag: Tag) extends Table[User](tag, "USERS") {
 
-//     def id = column[Long]("ID", O.PrimaryKey)
+case class User(
+    id : Int,
+    name: String,
+    email: String,
+    points: Int,
+    solved: List[Int],
+    upvoted: List[Int],
+    rights: String
+)
 
-//     def name = column[String]("NAME")
+  class Users(tag: Tag) extends Table[User](tag, "USERS") {
 
-//     def email = column[String]("EMAIL", O.Unique)
+    def id = column[Int]("ID", O.PrimaryKey)
 
-//     def points = column[Int]("POINTS")
+    def name = column[String]("NAME")
 
-//     // def solved = column[List[Long]]("SOLVED")
+    def email = column[String]("EMAIL", O.Unique)
 
-//     // def upvoted = column[List[Long]]("UPVOTED")
+    def points = column[Int]("POINTS")
+   
+    def solved = column[List[Int]]("SOLVED")
 
-//     def rights = column[String]("RIGHTS")
+    def upvoted = column[List[Int]]("UPVOTED")
 
-//     def * =
-//       (
-//         id,
-//         name,
-//         email,
-//         points,
-//         solved,
-//         upvoted,
-//         rights
-//       ) <> ((User.apply _).tupled, User.unapply)
-//   }
-// }
+    def rights = column[String]("RIGHTS")
+
+    def * =
+      (
+        id,
+        name,
+        email,
+        points,
+        solved,
+        upvoted,
+        rights
+      ).mapTo[User] 
+  }

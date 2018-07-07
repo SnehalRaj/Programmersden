@@ -1,4 +1,31 @@
-[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/Main.scala:80:16: could not find implicit value for parameter um: akka.http.scaladsl.unmarshalling.FromRequestUnmarshaller[simple.rest.Health][0m
-[0m[[0m[31merror[0m] [0m[0m      entity(as[Health]) { statusReport =>[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:20:33: reference to Table is ambiguous;[0m
+[0m[[0m[31merror[0m] [0m[0mit is imported twice in the same scope by[0m
+[0m[[0m[31merror[0m] [0m[0mimport slick.driver.PostgresDriver.api._[0m
+[0m[[0m[31merror[0m] [0m[0mand import pgdriver.MyPostgresProfile.api._[0m
+[0m[[0m[31merror[0m] [0m[0m  class Users(tag: Tag) extends Table[User](tag, "USERS") {[0m
+[0m[[0m[31merror[0m] [0m[0m                                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:22:14: not found: value column[0m
+[0m[[0m[31merror[0m] [0m[0m    def id = column[Int]("ID", O.PrimaryKey)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:22:32: not found: value O[0m
+[0m[[0m[31merror[0m] [0m[0m    def id = column[Int]("ID", O.PrimaryKey)[0m
+[0m[[0m[31merror[0m] [0m[0m                               ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:24:16: not found: value column[0m
+[0m[[0m[31merror[0m] [0m[0m    def name = column[String]("NAME")[0m
 [0m[[0m[31merror[0m] [0m[0m               ^[0m
-[0m[[0m[31merror[0m] [0m[0mone error found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:26:17: not found: value column[0m
+[0m[[0m[31merror[0m] [0m[0m    def email = column[String]("EMAIL", O.Unique)[0m
+[0m[[0m[31merror[0m] [0m[0m                ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:26:41: not found: value O[0m
+[0m[[0m[31merror[0m] [0m[0m    def email = column[String]("EMAIL", O.Unique)[0m
+[0m[[0m[31merror[0m] [0m[0m                                        ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:28:18: not found: value column[0m
+[0m[[0m[31merror[0m] [0m[0m    def points = column[Int]("POINTS")[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:31:19: not found: value column[0m
+[0m[[0m[31merror[0m] [0m[0m    def upvoted = column[List[Int]]("UPVOTED")[0m
+[0m[[0m[31merror[0m] [0m[0m                  ^[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/models/user.scala:33:18: not found: value column[0m
+[0m[[0m[31merror[0m] [0m[0m    def rights = column[String]("RIGHTS")[0m
+[0m[[0m[31merror[0m] [0m[0m                 ^[0m
+[0m[[0m[31merror[0m] [0m[0m9 errors found[0m
