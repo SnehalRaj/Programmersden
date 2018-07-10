@@ -18,3 +18,10 @@ compile
 commpile
 compile
 run
+flywayMigrate
+flywayInfo
+compile
+run
+compile
+run
+compile

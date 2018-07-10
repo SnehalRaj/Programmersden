@@ -13,7 +13,7 @@ correctAnswers: Int
 
   class Questions(tag: Tag) extends Table[Question](tag, "QUESTIONS") {
 
-    def id = column[Long]("ID", O.PrimaryKey)
+    def id = column[Long]("ID", O.PrimaryKey, O.AutoInc)
 
     def title = column[String]("TITLE")
 

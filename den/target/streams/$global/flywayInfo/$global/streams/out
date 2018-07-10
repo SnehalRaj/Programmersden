@@ -1,4 +1,3 @@
-[0m[[0m[0minfo[0m] [0m[0mFlyway Community Edition 5.0.7 by Boxfuse[0m
 [0m[[0m[0minfo[0m] [0m[0mDatabase: jdbc:postgresql://localhost/ (PostgreSQL 9.6)[0m
 [0m[[0m[0mdebug[0m] [0m[0mScanning for SQL callbacks ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/Resources/db/migration' (Prefix: '', Suffixes: '.sql')[0m
@@ -7,7 +6,6 @@
 [0m[[0m[0mdebug[0m] [0m[0mFound filesystem resource: src/main/Resources/db/migration/V3__Add_Question_Table.sql[0m
 [0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/resources/db/migration' (Prefix: '', Suffixes: '.sql')[0m
 [0m[[0m[33mwarn[0m] [0m[0mUnable to resolve location filesystem:src/main/resources/db/migration[0m
-[0m[[0m[0mdebug[0m] [0m[0mValidating migrations ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/Resources/db/migration' (Prefix: 'V', Suffixes: '.sql')[0m
 [0m[[0m[0mdebug[0m] [0m[0mScanning for resources in path: src/main/Resources/db/migration (src/main/Resources/db/migration)[0m
 [0m[[0m[0mdebug[0m] [0m[0mFound filesystem resource: src/main/Resources/db/migration/V2__Base_Version.sql[0m
@@ -20,7 +18,9 @@
 [0m[[0m[33mwarn[0m] [0m[0mUnable to resolve location filesystem:src/main/resources/db/migration[0m
 [0m[[0m[0mdebug[0m] [0m[0mScanning for filesystem resources at 'src/main/resources/db/migration' (Prefix: 'R', Suffixes: '.sql')[0m
 [0m[[0m[33mwarn[0m] [0m[0mUnable to resolve location filesystem:src/main/resources/db/migration[0m
-[0m[[0m[0minfo[0m] [0m[0mSuccessfully validated 2 migrations (execution time 00:00.021s)[0m
-[0m[[0m[0mdebug[0m] [0m[0mSchema "public" already exists. Skipping schema creation.[0m
-[0m[[0m[0minfo[0m] [0m[0mCurrent version of schema "public": 3[0m
-[0m[[0m[0minfo[0m] [0m[0mSchema "public" is up to date. No migration necessary.[0m
+[0m[[0m[0minfo[0m] [0m[0m+-----------+---------+--------------------+------+---------------------+---------+[0m
+[0m[[0m[0minfo[0m] [0m[0m| Category  | Version | Description        | Type | Installed On        | State   |[0m
+[0m[[0m[0minfo[0m] [0m[0m+-----------+---------+--------------------+------+---------------------+---------+[0m
+[0m[[0m[0minfo[0m] [0m[0m| Versioned | 2       | Base Version       | SQL  | 2018-07-07 21:44:25 | Success |[0m
+[0m[[0m[0minfo[0m] [0m[0m| Versioned | 3       | Add Question Table | SQL  | 2018-07-07 21:44:25 | Success |[0m
+[0m[[0m[0minfo[0m] [0m[0m+-----------+---------+--------------------+------+---------------------+---------+[0m

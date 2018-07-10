@@ -1,4 +1,4 @@
-[0m[[0m[0minfo[0m] [0m[0mPackaging /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/programmers-den_2.11-1.0.jar ...[0m
+[0m[[0m[0minfo[0m] [0m[0mPackaging /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/flyway-sbt-test1_2.11-0.0.1.jar ...[0m
 [0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models/Users.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/models/Users.class[0m
@@ -10,6 +10,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/utils/Config$class.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models/Questions$$anonfun$3$$anon$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/models/Questions$$anonfun$3$$anon$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Dao.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Dao.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	pgdriver[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/pgdriver[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication.class[0m
@@ -26,14 +28,20 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2$$anonfun$apply$1$$anonfun$apply$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/Health$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/Health$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Base$.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Base$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/SetStatusRequest$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/SetStatusRequest$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Dao$$anonfun$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Dao$$anonfun$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9$$anonfun$apply$10.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2$$anonfun$apply$6$$anonfun$apply$7$$anonfun$apply$9$$anonfun$apply$10.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Base$$anonfun$getQuestion$1.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Base$$anonfun$getQuestion$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/RequestHandler$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/RequestHandler$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/Config.class[0m
@@ -48,6 +56,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/pgdriver/MyPostgresProfile$MyAPI$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/models[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Dao$class.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Dao$class.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$5.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$5.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models/Question$.class[0m
@@ -66,6 +76,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/models/Questions$$anonfun$1.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/JsonSupport.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/JsonSupport.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Base$$anonfun$getQuestion$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Base$$anonfun$getQuestion$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$4.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2$$anonfun$apply$1$$anonfun$apply$3$$anonfun$apply$4.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models/Question.class[0m
@@ -94,6 +106,10 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/models/User$.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/utils[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Base.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Base.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO/Dao$$anonfun$2.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO/Dao$$anonfun$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models/Users$$anonfun$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/models/Users$$anonfun$2.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	models/Users$$anonfun$3.class[0m
@@ -104,6 +120,8 @@
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/RequestHandler.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	utils/MigrationConfig$class.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/utils/MigrationConfig$class.class[0m
+[0m[[0m[0mdebug[0m] [0m[0m	DAO[0m
+[0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/DAO[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2$$anonfun$apply$6.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	  /home/snehal/programmersden/Programmers_den/den/target/scala-2.11/classes/simple/rest/MyApplication$$anonfun$2$$anonfun$apply$6.class[0m
 [0m[[0m[0mdebug[0m] [0m[0m	simple/rest/MyApplication$$anonfun$2$$anonfun$apply$1$$anonfun$apply$3.class[0m

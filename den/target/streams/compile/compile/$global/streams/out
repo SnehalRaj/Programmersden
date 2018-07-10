@@ -1,16 +1,4 @@
-[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/Main.scala:48:33: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : simple.rest.Health[0m
-[0m[[0m[31merror[0m] [0m[0m required: models.User[0m
-[0m[[0m[31merror[0m] [0m[0m      sender() ! HealthResponse(status)[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/Main.scala:51:24: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : models.User[0m
-[0m[[0m[31merror[0m] [0m[0m required: simple.rest.Health[0m
-[0m[[0m[31merror[0m] [0m[0m      status = request.user[0m
-[0m[[0m[31merror[0m] [0m[0m                       ^[0m
-[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/Main.scala:52:33: type mismatch;[0m
-[0m[[0m[31merror[0m] [0m[0m found   : simple.rest.Health[0m
-[0m[[0m[31merror[0m] [0m[0m required: models.User[0m
-[0m[[0m[31merror[0m] [0m[0m      sender() ! HealthResponse(status)[0m
-[0m[[0m[31merror[0m] [0m[0m                                ^[0m
-[0m[[0m[31merror[0m] [0m[0mthree errors found[0m
+[0m[[0m[31merror[0m] [0m[0m/home/snehal/programmersden/Programmers_den/den/src/main/scala/DAO/Dao.scala:77:3: not found: value messages[0m
+[0m[[0m[31merror[0m] [0m[0m  messages.filter(_.id === id).delete[0m
+[0m[[0m[31merror[0m] [0m[0m  ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

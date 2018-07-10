@@ -19,7 +19,7 @@ case class User(
 
   class Users(tag: Tag) extends Table[User](tag, "USERS") {
 
-    def id = column[Int]("ID", O.PrimaryKey)
+    def id = column[Int]("ID", O.PrimaryKey,O.AutoInc)
 
     def name = column[String]("NAME")
 

@@ -15,7 +15,7 @@ import scala.concurrent.duration._
 import akka.util.Timeout
 import akka.pattern.ask
 import akka.http.scaladsl.unmarshalling.Unmarshal
-
+import slick.jdbc.H2Profile.api._
 
 object RequestHandler {
   def props(): Props = {
@@ -63,8 +63,6 @@ object MyApplication extends JsonSupport {
     implicit val system = ActorSystem("simple-rest-system")
     implicit val materializer = ActorMaterializer()
     implicit val executionContext = system.dispatcher
-   
-  
    val requestHandler = system.actorOf(RequestHandler.props(),"requestHandler")
  
 //Define the route
