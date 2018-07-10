@@ -1,0 +1,102 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+
+\title{Programmer's Den(Backend)}
+\author{\href{mailto:snehal@iitk.ac.in}{\textit{Snehal Raj}}
+        }
+\date{July 2018}
+
+\begin{document}
+
+\maketitle
+\section*{Main Repository:}
+\begin{itemize}
+    \item \href{https://github.com/SnehalRaj/Programmers_den}{Programmer's Den(Backend) repo}
+\end{itemize}
+\section*{\textbf{Timeline}}
+\subsection*{1\textsuperscript{st} week:}
+\begin{itemize}
+    \item Started learning basics of Scala programming language from the \href{https://madusudanan.com/blog/scala-articles-index/}{comprehensive blog}  by covering parts 1-17 and then parts 23-28 
+    \item Jumped to this link \href{https://twitter.github.io/scala_school/}{Twitter Scala School}, as it was recommended by our mentor.
+   
+
+ \item Completed the exercises from \href{https://www.scala-exercises.org/fp_in_scala/getting_started_with_functional_programming}{the site} for building better understanding of the language
+
+
+\end{itemize}
+
+\subsection*{2\textsuperscript{nd} week:}
+\begin{itemize}
+ \item Started reading and working out exercises  from this book \href{https://www.manning.com/books/functional-programming-in-scala}{Functional Programming in Scala}
+    \item Learned about sbt tool.
+    \item Read about the features of REST API.
+    
+    \item Got a basic Idea of the Akka-http model from their \href{https://doc.akka.io/docs/akka-http/current/introduction.html?language=scala}{official documentation} 
+     
+ 
+    \end{itemize}
+    
+    
+\subsection*{3\textsuperscript{rd} week:}
+\begin{itemize}
+ \item Got familiar with \href{http://doc.akka.io/docs/akka-http/current/scala/http/routing-dsl/index.html}{Routing wiht akka-http} and found the 
+\href{http://doc.akka.io/docs/akka-http/current/scala/http/routing-dsl/index.html#minimal-example}{minimal example of using akka-http routing} very helpful in understanding the above.
+
+  \item Learned about Actors in Akka and how they are used for asynchronous calls.
+
+
+ \item Completed the exercises from the first five chapters of \href{https://www.manning.com/books/functional-programming-in-scala}{Functional Programming in Scala} the answers to which are \href{www.google.com}{here} 
+
+\end{itemize}
+
+\subsection*{Was away from campus for two weeks which had been previously notified to the mentor}
+
+\subsection*{6\textsuperscript{th} week:}
+\begin{itemize} 
+
+   \item Decided the endpoints for the API. There will be two main models , Question and Users and each would have certain endpoints:
+        \begin{itemize}
+            \item /api/questions/(GET): It will return the complete list of questions to be searched in the frontend.
+            \item /api/questions/id(GET) : It will return the particular question from the id
+            \item /api/questions/(POST): For uploading a particular question.
+            \item /api/questions/id(PUT): For editing the particular question.
+			\item /api/questions/id(DELETE): For deleting a particular question.
+            \item /api/users/(GET): For obtaining the complete list of users registered.
+            \item /api/users/(PUT): For editing the details of an user.
+        \end{itemize}
+  
+    \item Followed the links recommended by our mentor to get an idea of akka http REST API:
+        \begin{itemize}
+            \item \href{https://spindance.com/reactive-rest-services-akka-http/}{Reactive REST Services using Akka HTTP}
+            \item \href{https://danielasfregola.com/2016/02/07/how-to-build-a-rest-api-with-akka-http/}{How to build a REST API with Akka Http}
+    \end{itemize}
+
+
+
+    \item Started learning Slick(Scala Language-Integrated Connection Kit), which is Functional Relational Mapping (FRM) library for Scala that makes it easy to work with relational databases
+\end{itemize}
+    
+  \subsection*{7\textsuperscript{th} week:}
+\begin{itemize}
+
+    \item Read initial chapters from the book which was assigned to us by our mentor \href{http://underscore.io/books/essential-slick/}{Essential Slick}.
+    \item Tried understanding code sample from \href{https://github.com/abhayptp/essential-slick-code}{Essential-Slick-Code}
+   
+    \item Used slick for handling postgres queries.
+  \item On mentor's recommendation chose flyway for Database migrations and started reading \href{https://flywaydb.org/getstarted/firststeps/commandline}{it's documentation.}
+ 
+ 
+    \item Wrote the config and migration files for database migration using flyway-sbt plugin
+    \item Defined the models required for the backend and created tables using the migration files
+    \item Wrote the code for the previously decided routes.
+\item No work was done as of yet by frontend and thus API wasn't integrated with the frontend.
+
+\end{itemize}
+
+
+
+
+
+
+\end{document}
